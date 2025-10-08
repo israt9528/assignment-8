@@ -40,7 +40,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn navBtn text-white">
+    <a className="btn bg text-white">
         <ImGithub />
         Contribute</a>
   </div>
