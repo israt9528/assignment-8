@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className='lg:flex gap-8 font-medium'>
     <NavLink to='/'><li>Home</li></NavLink>
     <NavLink to='/allApps'><li>Apps</li></NavLink>
-    <NavLink><li>Installation</li></NavLink>
+    <NavLink to='/installedApps'><li>Installation</li></NavLink>
     </div>
     </>
     return (

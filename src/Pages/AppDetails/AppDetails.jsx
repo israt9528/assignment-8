@@ -6,6 +6,7 @@ import revImg from '../../assets/icon-review.png'
 import '../../Components/Header/Navbar/Navbar.css'
 import { Bar, BarChart, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import useApps from '../../Hooks/useApps';
+import { addToLS } from '../../Utilities/StoreData';
 
 const AppDetails = () => {
 
@@ -13,16 +14,14 @@ const AppDetails = () => {
    const Id = parseInt(id)
 //    const {apps} = useApps()
    const apps = useLoaderData()
-   console.log(apps);
    
    
     const clickedApp = apps.find(app => app.id===Id)
-    console.log(clickedApp);
-    const {image, title, description, downloads, ratingAvg, ratings, reviews, companyName, size} = clickedApp
+    const {image, title, description, downloads, ratingAvg, ratings, reviews, companyName} = clickedApp
 
 
     const handleInstallation = () => {
-        
+        addToLS(id)
     }
 
 
@@ -52,7 +51,7 @@ const AppDetails = () => {
                              <h1 className='text-4xl font-bold'>{reviews}</h1>
                         </div>
                     </div>
-                    <button onClick={()=>handleInstallation()} className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
+                    <button onClick={()=>handleInstallation(id)} className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
                 </div>
             </div>
 
