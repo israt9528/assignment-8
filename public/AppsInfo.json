@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/35hpzCGj/cosmic-calculator.jpg",
+    "title": "Cosmic Calculator",
+    "companyName": "Star Labs",
+    "id": 1001,
+    "description": "Unlock the secrets of the universe with the Cosmic Calculator. This is the ultimate tool for students, physicists, and astronomers, featuring advanced functions for orbital mechanics, relativistic calculations, and unit conversions for over 20 astronomical constants. Its clean, anti-gravity interface makes complex equations easy to input and understand, providing instant, highly accurate results every time. It’s an essential utility for anyone dealing with advanced science and space-related math.",
+    "size": 45,
+    "reviews": 1245,
+    "ratingAvg": 4.8,
+    "downloads": 55000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/21q1mtXg/Zen-Habit-Tracker.jpg",
+    "title": "Zen Habit Tracker",
+    "companyName": "Mindful Software",
+    "id": 1002,
+    "description": "Transform your daily routine and achieve long-term goals with Zen Habit Tracker. This beautifully designed application uses a minimalist approach to track your progress without the overwhelming clutter. Set personalized streaks, receive non-intrusive daily reminders, and view insightful visual statistics to keep you motivated. It’s built on behavioral science principles to help you effortlessly build, maintain, and cement positive habits into your life.",
+    "size": 68,
+    "reviews": 3200,
+    "ratingAvg": 4.5,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1920 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hF2YkWtr/Pixel-Painter-Pro.jpg",
+    "title": "Pixel Painter Pro",
+    "companyName": "Artistic Apps Inc.",
+    "id": 1003,
+    "description": "The professional digital art studio now in your pocket. Pixel Painter Pro offers an unparalleled drawing experience with full support for high-resolution canvases, advanced layer management, and a customizable brush engine with thousands of dynamic brushes. Whether you are a professional illustrator or a hobbyist, the intuitive gesture controls, color mixing tools, and pressure-sensitivity support allow you to create stunning masterpieces anywhere.",
+    "size": 350,
+    "reviews": 890,
+    "ratingAvg": 4.9,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/xtsWDtZR/crypto-watcher.jpg",
+    "title": "Crypto Watcher Live",
+    "companyName": "Coin Tracker Ltd.",
+    "id": 1004,
+    "description": "Stay ahead of the volatile cryptocurrency market with Crypto Watcher Live. Get instant, real-time quotes for thousands of coins, set custom price alerts, and manage your entire portfolio from a single, secure dashboard. The app features powerful charting tools with technical indicators and a curated news feed to help you make informed investment decisions around the clock. Your comprehensive crypto hub for trading and monitoring.",
+    "size": 92,
+    "reviews": 7500,
+    "ratingAvg": 4.2,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 3950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5W7Spmn6/Adventure-Runner-3-D.jpg",
+    "title": "Adventure Runner 3D",
+    "companyName": "GameSphere",
+    "id": 1005,
+    "description": "Dive into an endless, exhilarating 3D running experience through ancient jungles, neon cities, and volcanic caverns! Collect coins, unlock unique characters with special abilities, and master intuitive swipe controls to dodge unexpected obstacles and perilous traps. Challenge your friends on the global leaderboards and enjoy hours of addictive, high-definition gameplay and a pumping soundtrack.",
+    "size": 850,
+    "reviews": 15000,
+    "ratingAvg": 3.9,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HTdyz3wp/Global-Weather-Radar.jpg",
+    "title": "Global Weather Radar",
+    "companyName": "Aura Metrology",
+    "id": 1006,
+    "description": "Get the most detailed and localized weather information available. Global Weather Radar provides minute-by-minute forecasts, animated Doppler radar maps showing precipitation and storm movements, and customizable severe weather alerts for any location worldwide. Features include a 7-day extended forecast, humidity, wind speed, UV index, and an air quality report, ensuring you are always prepared for the conditions.",
+    "size": 55,
+    "reviews": 2500,
+    "ratingAvg": 4.6,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Xk4YPFsh/Simple-To-Do-List.jpg",
+    "title": "Simple To-Do List",
+    "companyName": "Efficiency Tools",
+    "id": 1007,
+    "description": "Cut through the noise and focus on what matters with the ultimate minimalist task manager. Simple To-Do List lets you create and manage your daily tasks, projects, and shopping lists in seconds. Features include one-tap task completion, intuitive drag-and-drop reordering, and cloud synchronization across all your devices. No complex features, just pure, streamlined productivity to help you get more done.",
+    "size": 12,
+    "reviews": 5000,
+    "ratingAvg": 4.7,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 3300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Pvrt7rWg/Learn-Spanish-Fast.jpg",
+    "title": "Learn Spanish Fast",
+    "companyName": "Lingua Masters",
+    "id": 1008,
+    "description": "Start speaking Spanish confidently in weeks, not years. Our proven, gamified curriculum features thousands of interactive lessons, speech recognition practice, and cultural insights. Master essential vocabulary, grammar structures, and conversational fluency through fun, bite-sized lessons designed by certified language experts. Track your progress with a personalized learning path and join a community of global learners.",
+    "size": 150,
+    "reviews": 1800,
+    "ratingAvg": 4.4,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/998vtRpD/Data-Vault-Secure.jpg",
+    "title": "Data Vault Secure",
+    "companyName": "Digital Fortress",
+    "id": 1009,
+    "description": "Protect your digital life with military-grade 256-bit AES encryption. Data Vault Secure is an all-in-one manager for your passwords, credit cards, confidential documents, and private notes. Access your data quickly and securely with Face ID/Touch ID, utilize the built-in strong password generator, and enjoy seamless cloud backup, ensuring your sensitive information is safe from unauthorized access.",
+    "size": 30,
+    "reviews": 950,
+    "ratingAvg": 4.3,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fdhB311X/Retro-Puzzle-Quest.jpg",
+    "title": "Retro Puzzle Quest",
+    "companyName": "Indie Gamers Co.",
+    "id": 1010,
+    "description": "A nostalgic and highly addictive block-matching puzzle game that pays homage to the 8-bit era. Arrange falling blocks to clear lines, chain combos, and earn massive scores in a variety of challenging game modes. With authentic pixel art graphics, a chiptune soundtrack, and responsive controls, this game delivers pure, classic puzzle action that is easy to pick up but nearly impossible to put down.",
+    "size": 25,
+    "reviews": 6200,
+    "ratingAvg": 4.1,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BHCGLK56/Foodie-Photo-Editor.jpg",
+    "title": "Foodie Photo Editor",
+    "companyName": "Culinary Creative",
+    "id": 1011,
+    "description": "Make your culinary creations look absolutely irresistible before you share them. This specialized photo editor features over 50 unique filters and effects tailored specifically to enhance food photography. Adjust lighting, saturation, and focus to highlight textures and colors, turning simple snapshots into mouth-watering, professional-quality food images perfect for Instagram or your recipe blog.",
+    "size": 75,
+    "reviews": 450,
+    "ratingAvg": 4.9,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 4 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/21FtV9vp/Home-Workout-Buddy.jpg",
+    "title": "Home Workout Buddy",
+    "companyName": "Fit Life Systems",
+    "id": 1012,
+    "description": "Your ultimate personal trainer for home fitness. Home Workout Buddy offers hundreds of video-guided routines for all fitness levels, from beginner to advanced, all requiring zero equipment. Choose from HIIT, strength training, yoga, and stretching programs. Track your calories burned, set custom goals, and receive motivating daily reminders to stay consistent and achieve your body transformation goals.",
+    "size": 210,
+    "reviews": 12000,
+    "ratingAvg": 4.5,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/20yLPx3V/Code-Snippet-Manager.jpg",
+    "title": "Code Snippet Manager",
+    "companyName": "DevTools Hub",
+    "id": 1013,
+    "description": "The essential tool for developers to stop writing the same code twice. Code Snippet Manager lets you securely save, tag, organize, and search through your most used code fragments across dozens of programming languages with full syntax highlighting. Sync your library across desktop and mobile, ensuring your most critical functions and algorithms are always just a tap away, improving coding speed and consistency.",
+    "size": 55,
+    "reviews": 320,
+    "ratingAvg": 4.8,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 3 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 230 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hJRJ8XGf/Budget-Planner-Pro.jpg",
+    "title": "Budget Planner Pro",
+    "companyName": "Money Max Solutions",
+    "id": 1014,
+    "description": "Take control of your finances with a powerful, yet simple, budgeting app. Budget Planner Pro allows you to effortlessly track all your income and expenses, categorize spending, and visualize your financial health with interactive charts. Set monthly budgets, receive alerts for overspending, and automatically sync with bank accounts (optional) to achieve your savings goals and move toward financial freedom.",
+    "size": 60,
+    "reviews": 8500,
+    "ratingAvg": 4.3,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 750 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gLPZPgwv/Galactic-Conquest-RTS.jpg",
+    "title": "Galactic Conquest RTS",
+    "companyName": "Hyperion Games",
+    "id": 1015,
+    "description": "Command massive fleets, manage complex resource chains, and wage war across a procedurally generated galaxy in this epic Real-Time Strategy game. Build and customize your starbase, research powerful technologies, and lead one of five unique factions to ultimate dominance. Strategic depth, challenging AI, and intense online multiplayer battles await in this breathtaking space opera.",
+    "size": 1800,
+    "reviews": 25000,
+    "ratingAvg": 4.0,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 7500 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1GH3Vsbb/World-Atlas-2-0.jpg",
+    "title": "World Atlas 2.0",
+    "companyName": "Geo-Explorer",
+    "id": 1016,
+    "description": "Experience the world like never before with a fully interactive 3D globe. World Atlas 2.0 provides highly detailed political boundaries, geographical features, and demographic data for every country and major city. Zoom in to explore satellite imagery, learn about flags, capital cities, populations, and historical facts. It's an indispensable educational and reference tool for travelers and students alike.",
+    "size": 400,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8D1gFxKJ/Daily-Journal.jpg",
+    "title": "Daily Journal",
+    "companyName": "Personal Insight",
+    "id": 1017,
+    "description": "Cultivate mindfulness and track your personal journey with this beautiful digital journal. Daily Journal provides a secure, password-protected space to record your thoughts, feelings, and experiences. Features include customizable prompts, integrated mood tracking, and a powerful search function to revisit past entries. Export your journal and utilize the dark mode feature for comfortable nighttime writing.",
+    "size": 40,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZyLZBSZ/Music-Mixer-Studio.jpg",
+    "title": "Music Mixer Studio",
+    "companyName": "Sonic Creations",
+    "id": 1018,
+    "description": "Turn your device into a fully functional music production studio. Music Mixer Studio features a multi-track editor, a library of professional loops and samples, and a suite of virtual instruments, including drums, synths, and bass. Record vocals, apply studio-quality effects like reverb and delay, and mix down your original tracks in high-fidelity audio. Perfect for beginners and seasoned producers on the go.",
+    "size": 650,
+    "reviews": 4500,
+    "ratingAvg": 4.4,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sppywrnj/PDF-Reader-Fast.jpg",
+    "title": "PDF Reader Fast",
+    "companyName": "DocuTools",
+    "id": 1019,
+    "description": "The fastest and most efficient PDF reader on the market. PDF Reader Fast opens even the largest documents instantly, offering seamless scrolling, advanced search functionality, and a full suite of annotation tools. Highlight text, add sticky notes, draw freehand, and fill out forms easily. It’s optimized for low power consumption and supports cloud integration for all major storage providers.",
+    "size": 20,
+    "reviews": 9000,
+    "ratingAvg": 4.2,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4wG1wmTY/Drone-Flight-Simulator.jpg",
+    "title": "Drone Flight Simulator",
+    "companyName": "Skyline Simulations",
+    "id": 1020,
+    "description": "Master the art of drone piloting from the safety of your device. This highly realistic simulator features accurate physics, a variety of drone models (including racing and cinematic), and multiple detailed environments to practice in. Connect your own drone controller for a seamless experience. Complete challenging courses and practice advanced maneuvers to prepare for real-world flying and pass certification tests.",
+    "size": 1200,
+    "reviews": 550,
+    "ratingAvg": 3.8,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 140 },
+      { "name": "5 star", "count": 200 }
+    ]
+  }
+]
