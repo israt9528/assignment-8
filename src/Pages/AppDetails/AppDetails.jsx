@@ -4,18 +4,26 @@ import dwnImg from '../../assets/icon-downloads.png'
 import ratImg from '../../assets/icon-ratings.png'
 import revImg from '../../assets/icon-review.png'
 import '../../Components/Header/Navbar/Navbar.css'
+import { Bar, BarChart, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import useApps from '../../Hooks/useApps';
 
 const AppDetails = () => {
 
    const {id} = useParams()
    const Id = parseInt(id)
+//    const {apps} = useApps()
    const apps = useLoaderData()
-   console.log(Id, apps);
-
+   console.log(apps);
+   
    
     const clickedApp = apps.find(app => app.id===Id)
     console.log(clickedApp);
     const {image, title, description, downloads, ratingAvg, ratings, reviews, companyName, size} = clickedApp
+
+
+    const handleInstallation = () => {
+        
+    }
 
 
     return (
@@ -44,9 +52,20 @@ const AppDetails = () => {
                              <h1 className='text-4xl font-bold'>{reviews}</h1>
                         </div>
                     </div>
-                    <button className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
+                    <button onClick={()=>handleInstallation()} className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
                 </div>
             </div>
+
+            <div className='my-20'>
+                <h2 className='text-2xl font-bold'>Ratings</h2>
+                 
+            </div>
+            <div>
+                <h1 className='text-2xl font-bold'>Description</h1>
+                <p className='text-[#627382] my-2'>{description}</p>
+            </div>
+
+
         </div>
     );
 };

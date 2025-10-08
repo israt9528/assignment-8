@@ -1,11 +1,15 @@
 import React from 'react';
-import { useLoaderData } from 'react-router';
+import { useNavigate } from 'react-router';
 import Apps from '../Apps/Apps';
 import '../../Components/Header/Navbar/Navbar.css'
+import useApps from '../../Hooks/useApps';
 
 
 const TopApps = () => {
-    const apps = useLoaderData()
+    const {apps} = useApps()
+    const navigate = useNavigate()
+
+    const topApps = apps.slice(0,8)
     
     return (
         <div className='p-20 text-center bg-[#f9f9f9]'>
@@ -13,10 +17,10 @@ const TopApps = () => {
             <p className='text-[#627382] text-lg'>Explore All Trending Apps on the Market developed by us</p>
             <div className='my-10 grid grid-cols-4 gap-4 max-w-[1300px] mx-auto'>
                {
-                apps.map(app => <Apps key={app.id} app={app}></Apps>)
+                topApps.map(app => <Apps key={app.id} app={app}></Apps>)
                }
             </div>
-            <button className='bg text-white px-6 py-3 rounded font-medium'>Show All</button>
+            <button onClick={() => navigate('/allApps')} className='bg text-white px-6 py-3 rounded font-medium'>Show All</button>
 
         </div>
     );

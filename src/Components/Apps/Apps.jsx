@@ -10,7 +10,7 @@ const Apps = ({app}) => {
 
     const {image, title, downloads, ratingAvg, id} = app;
     return (
-        <div onClick={() => navigate(`/appDetails/${id}`)} className='p-4 rounded bg-white sh'>
+        <div onClick={() => navigate(`/appDetails/${id}`)} className='p-4 rounded bg-white sh hover:scale-95 transition ease-in'>
             <img className='rounded w-[300px]' src={image} alt="" />
             <h2 className='font-medium my-3 text-left text-lg'>{title}</h2>
             <div className='flex justify-between '>
