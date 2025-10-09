@@ -1,7 +1,7 @@
 import React from 'react';
 import dwnImg from '../../assets/icon-downloads.png'
 import ratImg from '../../assets/icon-ratings.png'
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const InstalledApp = ({app, handleRemove}) => {

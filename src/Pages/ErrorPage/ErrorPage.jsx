@@ -11,7 +11,7 @@ const ErrorPage = () => {
             <img className='mx-auto mb-5' src={error} alt="" />
             <h1 className='text-5xl font-semibold'>Oops, page not found!</h1>
             <p className='my-5 font-medium text-[#627382]'>The page you are looking for is not available.</p>
-            <button onClick={() => navigate(-1)} className='bg px-5 py-2 rounded text-white'>Go Back</button>
+            <button onClick={() => navigate('/')} className='bg px-5 py-2 rounded text-white'>Go Back</button>
         </div>
     );
 };

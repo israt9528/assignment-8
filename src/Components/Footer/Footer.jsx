@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='max-w-[1300px] mx-auto text-white flex max-md:flex-col gap-8 justify-between border-b border-[#E5E7EB30] pb-10'>
                     <div onClick={() => navigate('/')} className='flex items-center gap-2'>
                         <img className='w-[40px]' src={logoImg} alt="" />
-                        <a className="text-2xl font-bold logo">HERO.IO</a>
+                        <a className="text-2xl font-bold logo">Web Station</a>
                 </div>
                 <div className='flex max-lg:grid max-lg:grid-cols-2 gap-10 justify-between w-4/5  max-lg:ml-10 max-md:ml-0'>
                 <div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <div>
                     <h1 className='text-xl font-medium text-[#ffffffcf] mb-3'>Terms of Service</h1>
                     <ul className='text-[#627382] list-none'>
-                        <li>Using Web station</li>
+                        <li>Using Web Station</li>
                         <li>Content in Web services</li>
                         <li>About these terms</li>
                         <li>Updates</li>

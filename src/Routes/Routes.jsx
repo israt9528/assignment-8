@@ -6,6 +6,7 @@ import AllApps from "../Pages/AllApps/AllApps";
 import Installation from "../Pages/My Installation/Installation";
 import { Suspense } from "react";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import NotFound from "../Pages/ErrorPage/NotFound";
 
 
 
@@ -13,8 +14,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    errorElement: <ErrorPage></ErrorPage>,
-
+    // errorElement: <ErrorPage></ErrorPage>,
     children: [
         {
             index: true, 
@@ -23,13 +23,8 @@ export const router = createBrowserRouter([
         {
           path: 'appDetails/:id',
           loader: () => fetch('../AppsInfo.json'),
-          element: <Suspense fallback={
-            <div className='text-3xl font-bold text-center mt-5'>
-             <p>Loading.....<span className="loading loading-spinner loading-xl"></span></p>        
-        </div>
-          }>
-            <AppDetails></AppDetails>
-          </Suspense> 
+          Component: AppDetails,
+          errorElement: <NotFound></NotFound>
           
         },
         {
@@ -39,6 +34,10 @@ export const router = createBrowserRouter([
         {
           path: 'installedApps',
           Component: Installation
+        },
+        {
+          path: '*',
+          element: <ErrorPage></ErrorPage>
         }
     ]
   },

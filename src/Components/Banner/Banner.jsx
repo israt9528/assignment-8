@@ -13,11 +13,11 @@ const Banner = () => {
             <div className='space-x-4 mt-10'>
                 <button className="btn">
                     <IoLogoGooglePlaystore />
-                  Google Play
+                  <a href="https://play.google.com/store/games?hl=en">Google Play</a>
                 </button>
                 <button className="btn">
                     <FaAppStoreIos />
-                  App Store
+                  <a href="https://www.apple.com/app-store/">App Store</a>
                 </button>
                 <div className='mt-10'>
                     <img src={heroImg} alt="" />

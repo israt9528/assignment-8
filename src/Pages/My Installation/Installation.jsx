@@ -3,6 +3,9 @@ import useApps from '../../Hooks/useApps';
 import { useState } from 'react';
 import InstalledApp from '../../Components/InstalledApp/InstalledApp';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Components/Loading/Loading';
+
 
 const Installation = () => {
     const {apps, loading} = useApps()
@@ -40,9 +43,7 @@ const Installation = () => {
     ) ()
 
    if(loading) 
-        return <div className='text-3xl font-bold text-center mt-5'>
-    <p>Loading.....<span className="loading loading-spinner loading-xl"></span></p>        
-        </div>
+        return <Loading></Loading>
     
 
     return (
@@ -51,12 +52,12 @@ const Installation = () => {
             <p className='text-[#627382] text-lg'>Explore All Trending Apps on the Market developed by us</p>
 
             <div className='flex justify-between pt-20'>
-                <p className='text-lg font-medium'>({sortedApps.length}) Apps Found</p>
+                <p className='text-lg font-medium'>{sortedApps.length} Apps Found</p>
                 
             <select className='select select-bordered' 
                value={sort} 
                onChange={e => setSort(e.target.value)} >
-                <option value="" disabled>Sort By Downloads</option>
+                <option value="" disabled>Sort By Size</option>
                 
                 <option value="desc">High-Low</option>
                 <option value="asc">Low-High</option>

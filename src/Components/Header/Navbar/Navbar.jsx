@@ -34,7 +34,7 @@ const navigate = useNavigate()
     </div>
     <div onClick={() => navigate('/')} className='flex items-center gap-2'>
         <img className='w-[40px]' src={logoImg} alt="" />
-    <a className="text-2xl font-bold logo">HERO.IO</a>
+    <a className="text-2xl font-bold logo max-md:text-[22px]">Web Station</a>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
