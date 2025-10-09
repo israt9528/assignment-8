@@ -21,7 +21,16 @@ const AppDetails = () => {
 
 
     const handleInstallation = () => {
-        addToLS(id)
+        const existingList = JSON.parse(localStorage.getItem('installApps'))
+        let updateList  = []
+        if (existingList) {
+            const isDuplicate = existingList.some(p => p.id === clickedApp.id)
+            if(isDuplicate) return alert('already exist')
+                updateList = [...existingList, clickedApp]
+        }
+        else 
+            updateList.push(clickedApp)
+        localStorage.setItem('installApps', JSON.stringify(updateList))
     }
 
 
@@ -51,7 +60,7 @@ const AppDetails = () => {
                              <h1 className='text-4xl font-bold'>{reviews}</h1>
                         </div>
                     </div>
-                    <button onClick={()=>handleInstallation(id)} className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
+                    <button onClick={()=>handleInstallation()} className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
                 </div>
             </div>
 

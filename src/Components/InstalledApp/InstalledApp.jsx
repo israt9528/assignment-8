@@ -2,9 +2,8 @@ import React from 'react';
 import dwnImg from '../../assets/icon-downloads.png'
 import ratImg from '../../assets/icon-ratings.png'
 
-const InstalledApp = ({app}) => {
-    console.log(app);
-    const {image, title, downloads, ratingAvg, size } = app
+const InstalledApp = ({app, handleRemove}) => {
+    const {image, title, downloads, ratingAvg, size, id } = app
     
     return (
         <div className='bg-white flex p-4 justify-between items-center mb-5 rounded'>
@@ -25,7 +24,7 @@ const InstalledApp = ({app}) => {
                     </div>
                 </div>
             </div>
-          <button className='bg-[#00d390] rounded px-5 py-2 text-white font-medium'>Uninstall</button>
+          <button onClick={() => handleRemove(id)} className='bg-[#00d390] rounded px-5 py-2 text-white font-medium'>Uninstall</button>
         </div>
     );
 };
