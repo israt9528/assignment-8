@@ -1,26 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import dwnImg from '../../assets/icon-downloads.png'
 import ratImg from '../../assets/icon-ratings.png'
 import revImg from '../../assets/icon-review.png'
 import '../../Components/Header/Navbar/Navbar.css'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 import { Bar, BarChart, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import useApps from '../../Hooks/useApps';
-import { addToLS } from '../../Utilities/StoreData';
 
 const AppDetails = () => {
 
+   
    const {id} = useParams()
    const Id = parseInt(id)
-//    const {apps} = useApps()
    const apps = useLoaderData()
-   
+   const [clicked, setClicked] = useState(false)
    
     const clickedApp = apps.find(app => app.id===Id)
     const {image, title, description, downloads, ratingAvg, ratings, reviews, companyName} = clickedApp
 
 
     const handleInstallation = () => {
+        setClicked(true)
+        toast('Successful!')
         const existingList = JSON.parse(localStorage.getItem('installApps'))
         let updateList  = []
         if (existingList) {
@@ -31,6 +33,7 @@ const AppDetails = () => {
         else 
             updateList.push(clickedApp)
         localStorage.setItem('installApps', JSON.stringify(updateList))
+
     }
 
 
@@ -60,7 +63,11 @@ const AppDetails = () => {
                              <h1 className='text-4xl font-bold'>{reviews}</h1>
                         </div>
                     </div>
-                    <button onClick={()=>handleInstallation()} className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>Install now</button>
+                    <button onClick={()=>handleInstallation()} 
+                    disabled={clicked}
+                    className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>
+                        {clicked? 'Installed' : 'Install Now'}</button>
+                        <ToastContainer />
                 </div>
             </div>
 

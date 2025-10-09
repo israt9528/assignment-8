@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink, useNavigate } from 'react-router';
 import logoImg from '../../../assets/logo.png'
 import './Navbar.css'
 import { ImGithub } from "react-icons/im";
@@ -8,6 +8,9 @@ import { ImGithub } from "react-icons/im";
 
 
 const Navbar = () => {
+
+const navigate = useNavigate()
+
     const Links = <>
     <div className='lg:flex gap-8 font-medium'>
     <NavLink to='/'><li>Home</li></NavLink>
@@ -29,7 +32,7 @@ const Navbar = () => {
         {Links}
       </ul>
     </div>
-    <div className='flex items-center gap-2'>
+    <div onClick={() => navigate('/')} className='flex items-center gap-2'>
         <img className='w-[40px]' src={logoImg} alt="" />
     <a className="text-2xl font-bold logo">HERO.IO</a>
     </div>
@@ -40,7 +43,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg text-white">
+    <a href='https://github.com/israt9528' className="btn bg text-white">
         <ImGithub />
         Contribute</a>
   </div>

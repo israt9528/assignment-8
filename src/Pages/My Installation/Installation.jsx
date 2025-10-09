@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import useApps from '../../Hooks/useApps';
 import { useState } from 'react';
 import InstalledApp from '../../Components/InstalledApp/InstalledApp';
+import { toast } from 'react-toastify';
 
 const Installation = () => {
-    const {apps} = useApps()
+    const {apps, loading} = useApps()
     
     const [installed, setInstalled] = useState([])
     const [sort, setSort] = useState('')    
@@ -17,6 +18,7 @@ const Installation = () => {
     }, [apps])
     
     const handleRemove = id => {
+        toast('App Uninstalled Successfully!')
         const existingList = JSON.parse(localStorage.getItem('installApps'))
        let updateList = existingList.filter(app => app.id !== id)
 
@@ -37,7 +39,10 @@ const Installation = () => {
     }
     ) ()
 
-
+   if(loading) 
+        return <div className='text-3xl font-bold text-center mt-5'>
+    <p>Loading.....<span className="loading loading-spinner loading-xl"></span></p>        
+        </div>
     
 
     return (

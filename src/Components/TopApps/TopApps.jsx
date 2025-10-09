@@ -6,10 +6,15 @@ import useApps from '../../Hooks/useApps';
 
 
 const TopApps = () => {
-    const {apps} = useApps()
+    const {apps, loading} = useApps()
     const navigate = useNavigate()
 
     const topApps = apps.slice(0,8)
+
+    if(loading) 
+        return <div className='text-3xl font-bold text-center mt-5'>
+    <p>Loading.....<span className="loading loading-spinner loading-xl"></span></p>        
+        </div>
     
     return (
         <div className='p-20 text-center bg-[#f9f9f9]'>
