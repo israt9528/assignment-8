@@ -28,11 +28,11 @@ export const router = createBrowserRouter([
           
         },
         {
-          path: 'allApps',
+          path: '/allApps',
           Component: AllApps
         },
         {
-          path: 'installedApps',
+          path: '/installedApps',
           Component: Installation
         },
         {
