@@ -27,7 +27,7 @@ const AppDetails = () => {
         if (existingList) {
             const isDuplicate = existingList.some(p => p.id === clickedApp.id)
             if(isDuplicate) 
-                return toast('Already Installed')
+                return toast(`${title}- Already Installed`, {position: 'top-center'})
             else
                  updateList = [...existingList, clickedApp]
         }
@@ -35,7 +35,7 @@ const AppDetails = () => {
             updateList.push(clickedApp)
         }
         localStorage.setItem('installApps', JSON.stringify(updateList))
-        toast('Successfully Installed!')
+        toast(`${title}- Installed Successfully `, {position: 'top-center'})
       
     }
 

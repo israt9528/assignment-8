@@ -20,14 +20,15 @@ const Installation = () => {
         
     }, [apps])
     
-    const handleRemove = id => {
-        toast('Uninstalled Successfully!')
+    const handleRemove = (id,title) => {
         const existingList = JSON.parse(localStorage.getItem('installApps'))
        let updateList = existingList.filter(app => app.id !== id)
 
        setInstalled(updateList)
 
         localStorage.setItem('installApps', JSON.stringify(updateList))
+        toast(`${title}- Uninstalled Successfully!`, {position: 'top-center'})
+
     }
 
     const sortedApps = (() => {
