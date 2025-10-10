@@ -17,25 +17,26 @@ const AppDetails = () => {
    const [clicked, setClicked] = useState(false)
    
     const clickedApp = apps.find(app => app.id===Id)
-    const {image, title, description, downloads, ratingAvg, ratings, reviews, companyName} = clickedApp
+    const {image, title, description, downloads, ratingAvg, ratings, reviews, companyName, size} = clickedApp
 
 
     const handleInstallation = () => {
         setClicked(true)
-        toast('Successful!')
         const existingList = JSON.parse(localStorage.getItem('installApps'))
         let updateList  = []
         if (existingList) {
             const isDuplicate = existingList.some(p => p.id === clickedApp.id)
             if(isDuplicate) 
-                return 
+                return toast('Already Installed')
             else
                  updateList = [...existingList, clickedApp]
         }
-        else 
+        else {
             updateList.push(clickedApp)
+        }
         localStorage.setItem('installApps', JSON.stringify(updateList))
-
+        toast('Successfully Installed!')
+      
     }
 
 
@@ -68,7 +69,7 @@ const AppDetails = () => {
                     <button onClick={()=>handleInstallation()} 
                     disabled={clicked}
                     className='bg-[#00d390] rounded px-5 py-3 text-white font-medium'>
-                        {clicked? 'Installed' : 'Install Now'}</button>
+                        {clicked? 'Installed' : `Install Now (${size})`}</button>
                         <ToastContainer />
                 </div>
             </div>

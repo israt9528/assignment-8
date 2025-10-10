@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Apps from '../../Components/Apps/Apps';
 import useApps from '../../Hooks/useApps';
 import { useState } from 'react';
@@ -17,6 +17,21 @@ const AllApps = () => {
         : apps
 
       
+    useEffect(() => {
+        if(!search) {
+            setLoader(false)
+            return;
+        }
+
+        setLoader(true)
+
+        const delay = setTimeout(() => {
+            setLoader(false)
+        }, 100);
+
+        return () => clearTimeout(delay)
+    }, [search])
+
 
 
     if(loading) 
@@ -24,8 +39,8 @@ const AllApps = () => {
     
     return (
         <div className='p-20 text-center bg-[#f9f9f9] max-lg:p-10'>
-            <h1 className='text-5xl font-bold mb-4'>Our All Applications</h1>
-            <p className='text-[#627382] text-lg'>Explore All Apps on the Market developed by us. We code for Millions</p>
+            <h1 className='text-5xl font-bold mb-4 max-md:text-3xl'>Our All Applications</h1>
+            <p className='text-[#627382] text-lg max-md:text-base'>Explore All Apps on the Market developed by us. We code for Millions</p>
 
             <div className='flex max-md:flex-col max-md:gap-5 max-md:items-start justify-between pt-20'>
                 <p className='text-lg font-medium'>({searchedProducts.length}) Apps Found</p>
@@ -46,15 +61,13 @@ const AllApps = () => {
                         setSearch(e.target.value)
                         // setLoader(!loader)
                      }} 
-                     defaultValue={search} type="search" required placeholder="Search" />
+                     value={search} type="search" required placeholder="Search" />
                 </label>
             </div>
 
            {
-            loading && <Loading></Loading>
+            loader && <Loading></Loading>
            }
-
-
 
             {
                 searchedProducts.length === 0 ? 
